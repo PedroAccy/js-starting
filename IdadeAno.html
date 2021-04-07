@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaioridadeAge</title> <!-- Coloca titulo na página -->
+    <Style>
+        body{
+            background-color: burlywood; /* Trocar a cor de fundo */
+            color: white; /* Trocar a cor dos itens em body */
+            font: bold 20pt Arial; /* Modificar a font da escrita em body *//* Modificar a font da escrita em body */
+         }
+    </Style>
+</head>
+<body>
+    <script>
+        var ano = window.prompt('Em que ano você nasceu?') // prompt para pegar o valor digitado
+        var idade = ano <= 2003? 'maior': 'menor' // variavel idade recebe o valor dependendo do boolean
+        document.write(`Você é ${idade} de idade.`) // escrita de resultado final no documento
+    </script>
+</body>
+</html>

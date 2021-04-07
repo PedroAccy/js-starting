@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title> <!-- Titulo da página -->
+    <style>
+        body{
+            background-color: rgb(92, 92, 131); /* Trocar a cor de fundo */
+            color: white; /* Trocar a cor dos itens em body */
+            font: Bold 18pt Arial; /* Modificar a font da escrita em body */
+   }
+    </style>
+</head>
+<body>
+    <!-- escrita no documento como p recebendo name 'msg' -->
+    <p name = 'msg'> Aqui vai o resultado</p> 
+    
+    <script>
+        // variavel a = p com nome 'msg' + [0]
+        var a = document.getElementsByName('msg')[0]
+
+        // escrita no documento seguido de variavel a + innertext (inserir texto)
+        document.write(a.innerText) 
+
+        // variavel a + style + color = trocar a cor do valor da variavel a
+        a.style.color = 'pink'
+    </script>
+</body>
+</html>

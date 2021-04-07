@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title> <!-- Titulo da página -->
+    <style>
+        body{
+            background-color: black; /* Trocar a cor de fundo */
+        }
+        div#area {
+            font: normal 15pt arial; /* Modificar a font da escrita em body */
+            background: black; /* Modificar a font da escrita em body */
+            color: white; /* Trocar a cor dos itens em body */
+            width: 200px; /* Modifica a largura */
+            height: 100px; /* Modifica a altura*/
+            line-height: 100px; /* */
+            text-align: center; /* Alinha a div ao centro */
+        }
+    </style>
+</head>
+<body>
+    <div id ='area'> Passe o mouse aqui </div><!-- Div com id 'area' -->
+
+    <script>
+        // Atribue o valor do id 'area' a variavel a
+        var a = document.getElementById('area') 
+
+        // Conjunto de eventos como click e mouse enter
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        // Função clicar com mudança de background color e inserção de texto
+        function clicar() {
+            a.innerText = 'Clicou!'
+            a.style.background = 'Red'
+        }
+
+        // Função mouseenter com mudança de background color e inserção de texto
+        function entrar() {
+            a.innerText = 'Entrou'
+            a.style.background = 'black'
+        }
+        
+        // Função mouseout com mudança de background color e inserção de texto
+        function sair(){
+            a.innerText = 'Saiu'
+            a.style.background = 'black'
+        }
+    </script>
+</body>
+</html>

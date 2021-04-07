@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de String</title> <!-- Coloca titulo na página -->
+    <style>
+        body{
+            background-color: brown; /* Trocar a cor de fundo */
+            color: white; /* Trocar a cor dos itens em body */
+            font: bold 20pt Arial; /* Modificar a font da escrita em body */
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // prompt para receber o valor digitado
+        var nome = window.prompt('Qual seu nome?') 
+    
+        // escrita no documento + <br/> para quebra de linha
+        document.write(`Seu nome tem ${nome.length} letras!<br/>`)
+
+        // transforma a string selecionada ${} em tudo maúsculo + <br/> para quebra de linha 
+        document.write(`Seu nome todo em maiúsculo ficaria ${nome.toUpperCase()}.<br/>`) 
+        
+        // transforma a string selecionada ${} em tudo minúsculo + <br/> para quebra de linha 
+        document.write(`Seu nome todo em minúsculo ficaria ${nome.toLowerCase()}.<br/>`)
+
+    </script>
+</body>
+</html>

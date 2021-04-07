@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title> <!-- Titulo da página -->
+    <style>
+        body{
+            background-color: rgb(92, 92, 131); /* Trocar a cor de fundo */
+            color: white; /* Trocar a cor dos itens em body */
+            font: 18pt Arial; /* Modificar a font da escrita em body */
+   }
+    </style>
+</head>
+<body>  
+    <!-- escrita no documento como p recebendo id 'msg' -->
+    <p id = 'msg'>Aqui vai <strong>o</strong> resultado</p>
+
+    <script>
+        // variavel a = queryselector p que possua o id msg (quando classe == a '.' invez de #)
+        var a = document.querySelector('p#msg')
+
+        // variavel a + innerHTML (inserir texto + child's possiveis, como por exemplo o strong)
+        document.write(a.innerHTML)
+
+       // setar variavel b como body
+        var b = window.document.body
+
+        // variavel b + style + backgroundColor = trocar a cor do background da variavel b (com valor body)
+        b.style.backgroundColor = 'Black'
+    </script>
+</body>
+</html>
